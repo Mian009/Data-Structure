@@ -2,52 +2,6 @@
 // const array2 = [...array,...array]
 // console.log(array2)
 
-//  const array = [1, 2, 3, 4, 5];
-// function myFilter(callback, array) {
-//   const result = [];
-//   for (let i = 0; i < array.length; i++){
-//     if(callback(array[i])){
-//     result.push(callback(array[i], i))
-//     }
-//   }
-//   return result
-// }
-// console.log(myMap((i)=> i, array))
- 
-
-// function myFilter(arr, callback) {
-//   const filteredArr = [];
-
-//   for (let i = 0; i < arr.length; i++) {
-//     if (callback(arr[i], i, arr)) {
-//       filteredArr.push(arr[i]);
-//     }
-//   }
-
-//   return filteredArr;
-// }
-
-// // Test your custom filter method
-// const numbers = [1, 2, 3, 4, 5, 6];
-
-// const filteredNumbers = myFilter(numbers, (number) => number % 2 === 0);
-
-// console.log(filteredNumbers);
-
-
-// const doubled = myMap(numbers, (num) => num * 2);
-// console.log(doubled);
-
-
-
-// function myMap(array, callback){
-//     const result = [];
-//     for(let i=0; i < array.lenght; i++){
-//         array.push(callback(array[i], i, array))
-//     }
-//     return result;
-// }
-
 // let me = { 
 //  name: "Ashutosh Verma", 
 //  thisInArrow:() => { 
@@ -155,6 +109,20 @@
 // }
 // console.log(data)
 
+// let data = ["z", "d", "x", "y", "q", "u", "a", "c", "e"]
+// function mySort(data){
+//  for(i=0; i<data.length; i++ ){
+//   for(j=0; j<data.length; j++){
+//      if(data[j] > data[j+1]){
+//       let temp = data[j]
+//       data[j] = data[j+1]
+//       data[j+1] = temp
+//      }
+//   }
+//  }
+// }
+// mySort(data)
+// console.log(data);
 
 
 //ADD ELEMENT IN ARRAY
@@ -300,17 +268,16 @@
 // console.log(arr)
 
 
-const data = [34,36,28,99,24]
-let newEl = 33;
-let position = 3;
 
-for(let i=data.length-1; i>=position; i--){
-  if(i>=position){
-   data[i+1] = data[i]
+//OWN FILTER METHOD 
+const array = [1, 2, 3, 4, 5];
+function myFilter(callback, arr) {
+  const result = [];
+  for (let i = 0; i < array.length; i++){
+    if(callback(arr[i], i, arr)){
+      result.push(arr[i])
+    }
   }
-  if(i == position){
-    data[i] = newEl
-  }
+  return result
 }
-
-console.log(data);
+console.log(myFilter((i,e, arr2)=>i ,array))
