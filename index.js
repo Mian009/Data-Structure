@@ -254,10 +254,17 @@
 // console.log(index)
 
 
-// Remove duplicate item in Array
+// REMOVE DUBLICATE ARRAY
+
+// const arr = [1,2,3,3,2,1,4,5,5,4];
+
+// const newArr = arr.filter((val, ind)=>{
+//   return arr.indexOf(val) === ind
+// })
+// console.log(newArr)
 
 
-// const arr = [1,1,2,2,3,3,4,4];
+// const arr = [1,2,3,3,2,1,4,5,5,4];
 // for(let i=0; i<arr.length; i++){
 //   for(let j=i+1; j<arr.length; j++){
 //         if(arr[i] == arr[j]){
@@ -265,19 +272,62 @@
 //         }
 //     }
 // }
-// console.log(arr)
+// console.log(newArr)
 
 
 
 //OWN FILTER METHOD 
-const array = [1, 2, 3, 4, 5];
-function myFilter(callback, arr) {
-  const result = [];
-  for (let i = 0; i < array.length; i++){
-    if(callback(arr[i], i, arr)){
-      result.push(arr[i])
-    }
-  }
-  return result
-}
-console.log(myFilter((i,e, arr2)=>i ,array))
+// const array = [1, 2, 3, 4, 5];
+// function myFilter(callback, arr) {
+//   const result = [];
+//   for (let i = 0; i < array.length; i++){
+//     if(callback(arr[i], i, arr)){
+//       result.push(arr[i])
+//     }
+//   }
+//   return result
+// }
+// console.log(myFilter((i,e, arr2)=>i ,array))
+
+
+// const myArray = [["John", 23], ["dog", 3]];
+// let position = 0;
+// let newEle = ["Paul", 35];
+
+// for(let i=myArray.length; i>=0; i++){
+//   if(i >= position){
+//     myArray[i+1] = myArray[i]
+//     if(i == position){
+//       myArray[i] = newEle
+//     }
+//   }
+// }
+// console.log(myArray)
+
+// let num = 15;
+// let newnum = num++;
+// console.log(num)
+// console.log(newnum)
+
+// var num = 15;
+// var newnum = ++num;
+// console.log(num)
+// console.log(newnum)
+
+
+// var num = 15;
+// var newnum = num--;
+// console.log(num)
+// console.log(newnum)
+
+// var num = 15;
+// var newnum = --num;
+// console.log(num)
+// console.log(newnum)
+
+
+
+const fruits = ['apple', 'banana', 'orange'];
+fruits.forEach((fruit, ind) => {
+  console.log(fruit);
+});
