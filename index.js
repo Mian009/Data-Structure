@@ -304,30 +304,31 @@
 // }
 // console.log(myArray)
 
+
+//POST INCREMENT
 // let num = 15;
 // let newnum = num++;
 // console.log(num)
 // console.log(newnum)
 
-// var num = 15;
-// var newnum = ++num;
-// console.log(num)
-// console.log(newnum)
-
-
-// var num = 15;
-// var newnum = num--;
-// console.log(num)
-// console.log(newnum)
-
-// var num = 15;
-// var newnum = --num;
-// console.log(num)
-// console.log(newnum)
 
 
 
-const fruits = ['apple', 'banana', 'orange'];
-fruits.forEach((fruit, ind) => {
-  console.log(fruit);
-});
+// const fruits = ['apple', 'banana', 'orange'];
+// fruits.forEach((fruit, ind) => {
+//   console.log(ind);
+// });
+
+
+
+//FIND MIDDLE ELEMENT IN ARRAY
+// const arr = [45,3,4,23,22,12,34];
+// const center = Math.round(arr.length / 2);
+// if(arr.length % 2 === 0){
+//   console.log("Center Values for even length of array are: ", arr[center - 1], arr[center])  
+// }else {
+//   console.log("Center Values for odd length of array are: ", arr[center - 1])  
+// }
+
+
+
