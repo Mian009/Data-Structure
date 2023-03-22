@@ -2,16 +2,16 @@
 // const array2 = [...array,...array]
 // console.log(array2)
 
-// let me = { 
-//  name: "Ashutosh Verma", 
-//  thisInArrow:() => { 
-//  console.log("My name is " + this.name); // no 'this' binding here 
-//  }, 
-//  thisInRegular(){ 
-//  console.log("My name is " + this.name); // 'this' binding works here 
-//  } 
+// let me = {
+//  name: "Ashutosh Verma",
+//  thisInArrow:() => {
+//  console.log("My name is " + this.name); // no 'this' binding here
+//  },
+//  thisInRegular(){
+//  console.log("My name is " + this.name); // 'this' binding works here
+//  }
 // };
-// me.thisInArrow(); 
+// me.thisInArrow();
 // me.thisInRegular();
 
 // let me = {
@@ -41,7 +41,7 @@
 //         reversed += str[i]
 //     }
 //     return reversed;
-//  } 
+//  }
 //  console.log(reverseString('hello'))
 
 //   function reverseString(str){
@@ -50,18 +50,15 @@
 //         reversed += str[i]
 //     }
 //     return reversed;
-//  } 
+//  }
 //  console.log(reverseString('hello'))
-
-
-
 
 //OWN MAP METHOD
 
 //  const array = [1, 2, 3, 4, 5];
 // function myMap(callback, arr) {
 //   const result = [];
-  
+
 //   for (let i = 0; i < array.length; i++){
 //     result.push(callback(arr[i], i, arr))
 //   }
@@ -79,9 +76,7 @@
 // }
 // console.log(myMap((i,e)=> e , array))
 
-
-
-//SORTING METHOD 
+//SORTING METHOD
 
 // let data = [23,99,12,34,2,1,99,32,21,4,89,45,12,39,798];
 // let data = ["z", "d", "x", "y", "q", "u", "a", "c", "e"]
@@ -124,7 +119,6 @@
 // mySort(data)
 // console.log(data);
 
-
 //ADD ELEMENT IN ARRAY
 
 // let data =[23,45,12,34,13,34];
@@ -166,9 +160,6 @@
 // }
 // console.log(data)
 
-
-
-
 //DELETE ELEMENTS IN ARRAY
 
 // let data =[23,45,12,34,13,34];
@@ -179,7 +170,6 @@
 // data.length =data.length-1
 // console.log(data)
 
-
 // let data =[23,45,12,34,13,34];
 // let position = 2;
 // for (let i=position; i>data.length-1; i++){
@@ -188,7 +178,6 @@
 // data.length =data.length-1;
 // console.log(data)
 
-
 //let data =[23,45,12,34,13,34];
 // let position = 3;
 // for(let i=1; i<data.length-1; i++){
@@ -196,8 +185,6 @@
 // }
 // data.length = data.length-1
 // console.log(data)
-
-
 
 //SEARCH ELEMENT IN ARRAY
 
@@ -212,11 +199,6 @@
 // }
 // console.log(index)
 
-
-
-
-
-
 //MERGE TWO ARRAY
 
 // const data =[23,34,12,35,26,99];
@@ -229,7 +211,6 @@
 //   data3[data.length + i] =data2[i]
 // }
 // console.log(data3)
-
 
 // const data1 =[23,34,12,35,26,99];
 // const data2 = [14,59,33,65,88];
@@ -253,7 +234,6 @@
 // }
 // console.log(index)
 
-
 // REMOVE DUBLICATE ARRAY
 
 // const arr = [1,2,3,3,2,1,4,5,5,4];
@@ -262,7 +242,6 @@
 //   return arr.indexOf(val) === ind
 // })
 // console.log(newArr)
-
 
 // const arr = [1,2,3,3,2,1,4,5,5,4];
 // for(let i=0; i<arr.length; i++){
@@ -274,9 +253,7 @@
 // }
 // console.log(newArr)
 
-
-
-//OWN FILTER METHOD 
+//OWN FILTER METHOD
 // const array = [1, 2, 3, 4, 5];
 // function myFilter(callback, arr) {
 //   const result = [];
@@ -288,7 +265,6 @@
 //   return result
 // }
 // console.log(myFilter((i,e, arr2)=>i ,array))
-
 
 // const myArray = [["John", 23], ["dog", 3]];
 // let position = 0;
@@ -304,31 +280,55 @@
 // }
 // console.log(myArray)
 
-
 //POST INCREMENT
 // let num = 15;
 // let newnum = num++;
 // console.log(num)
 // console.log(newnum)
 
-
-
-
 // const fruits = ['apple', 'banana', 'orange'];
 // fruits.forEach((fruit, ind) => {
 //   console.log(ind);
 // });
 
-
-
 //FIND MIDDLE ELEMENT IN ARRAY
-// const arr = [45,3,4,23,22,12,34];
-// const center = Math.round(arr.length / 2);
+
+
+// const arr = [45,3,4,23,44,22,12,34];
+
+// function middleElement(arr){
+// const center = ~~(arr.length / 2);
 // if(arr.length % 2 === 0){
-//   console.log("Center Values for even length of array are: ", arr[center - 1], arr[center])  
+//   console.log("Center Values for even length of array are: ", arr[center - 1], arr[center])
 // }else {
-//   console.log("Center Values for odd length of array are: ", arr[center - 1])  
+//   console.log("Center Values for odd length of array are: ", arr[center - 1])
 // }
+// }
+// middleElement(arr)
 
 
+// let data = [23,99,12,34,2,1,99,32,21,4,89,45,12,39,798];
+// let data = ["z", "d", "x", "y", "q", "u", "a", "c", "e"];
 
+// function BubbleSort(data) {
+//   for (i = 0; i < data.length; i++) {
+//     for (j = 0; j < data.length; j++) {
+//       if (data[j] > data[j + 1]) {
+//         let temp = data[j];
+//         data[j] = data[j + 1];
+//         data[j + 1] = temp;
+//       }
+//     }
+//   }
+//   console.log(data);
+// }
+// BubbleSort(data)
+
+let a, b;
+function Mian(x,y,z,...a){
+  // console.log(a.filter((a,e)=> e === 2))
+  // const [x,b,c] = a;
+  console.log([x,y,z])
+
+}
+Mian(1,4,6,8,6)
